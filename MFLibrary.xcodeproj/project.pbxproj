@@ -10,6 +10,7 @@
 		3B9BC984280E9C09004EC13D /* MFLibrary.docc in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BC983280E9C09004EC13D /* MFLibrary.docc */; };
 		3B9BC985280E9C09004EC13D /* MFLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B9BC982280E9C09004EC13D /* MFLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B9BC98C280E9DDA004EC13D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BC98B280E9DDA004EC13D /* FirstViewController.swift */; };
+		3B9BC9CC280ED764004EC13D /* MFLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BC9CB280ED764004EC13D /* MFLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		3B9BC982280E9C09004EC13D /* MFLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFLibrary.h; sourceTree = "<group>"; };
 		3B9BC983280E9C09004EC13D /* MFLibrary.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MFLibrary.docc; sourceTree = "<group>"; };
 		3B9BC98B280E9DDA004EC13D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		3B9BC9CB280ED764004EC13D /* MFLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				3B9BC98B280E9DDA004EC13D /* FirstViewController.swift */,
+				3B9BC9CB280ED764004EC13D /* MFLogger.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B9BC984280E9C09004EC13D /* MFLibrary.docc in Sources */,
+				3B9BC9CC280ED764004EC13D /* MFLogger.swift in Sources */,
 				3B9BC98C280E9DDA004EC13D /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
