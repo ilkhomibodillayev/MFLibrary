@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = 'MFLibrary'
-  spec.version      = '0.1.2'
+  spec.version      = '0.1.4'
   spec.authors      = { 
     'Ilkhom Ibodillayev' => 'ilkhom89@gmail.com'
   }
@@ -19,5 +19,8 @@ Pod::Spec.new do |spec|
   spec.source_files = '**/*.swift', '*.swift'
   spec.swift_versions = '4.0'
   spec.ios.deployment_target = '11.0'
-  spec.dependency 'Alamofire'
+  spec.dependency 'MBProgressHUD'
+  spec.source       = { 
+    :git => 'https://github.com/ilkhomibodillayev/MFModule.git'
+  }
 end
