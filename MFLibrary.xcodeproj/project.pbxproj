@@ -11,14 +11,18 @@
 		3B9BC985280E9C09004EC13D /* MFLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B9BC982280E9C09004EC13D /* MFLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B9BC98C280E9DDA004EC13D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BC98B280E9DDA004EC13D /* FirstViewController.swift */; };
 		3B9BC9CC280ED764004EC13D /* MFLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BC9CB280ED764004EC13D /* MFLogger.swift */; };
+		3C1060C3DF9016B7F40E1FE4 /* Pods_MFLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41011835017400138A27EE83 /* Pods_MFLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		072E9773B14D5A835669B810 /* Pods-MFLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFLibrary.debug.xcconfig"; path = "Target Support Files/Pods-MFLibrary/Pods-MFLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		3B9BC97F280E9C09004EC13D /* MFLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MFLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B9BC982280E9C09004EC13D /* MFLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFLibrary.h; sourceTree = "<group>"; };
 		3B9BC983280E9C09004EC13D /* MFLibrary.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MFLibrary.docc; sourceTree = "<group>"; };
 		3B9BC98B280E9DDA004EC13D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		3B9BC9CB280ED764004EC13D /* MFLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFLogger.swift; sourceTree = "<group>"; };
+		41011835017400138A27EE83 /* Pods_MFLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MFLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		582DD91CCD071085654F1AE8 /* Pods-MFLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFLibrary.release.xcconfig"; path = "Target Support Files/Pods-MFLibrary/Pods-MFLibrary.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +30,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C1060C3DF9016B7F40E1FE4 /* Pods_MFLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EEE23309E9C169573D41DEC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				072E9773B14D5A835669B810 /* Pods-MFLibrary.debug.xcconfig */,
+				582DD91CCD071085654F1AE8 /* Pods-MFLibrary.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		17D9DF2BA480DA343ACF42FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41011835017400138A27EE83 /* Pods_MFLibrary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3B9BC975280E9C09004EC13D = {
 			isa = PBXGroup;
 			children = (
 				3B9BC981280E9C09004EC13D /* MFLibrary */,
 				3B9BC980280E9C09004EC13D /* Products */,
+				0EEE23309E9C169573D41DEC /* Pods */,
+				17D9DF2BA480DA343ACF42FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,10 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B9BC988280E9C09004EC13D /* Build configuration list for PBXNativeTarget "MFLibrary" */;
 			buildPhases = (
+				044011A505454FC5D2CA0E61 /* [CP] Check Pods Manifest.lock */,
 				3B9BC97A280E9C09004EC13D /* Headers */,
 				3B9BC97B280E9C09004EC13D /* Sources */,
 				3B9BC97C280E9C09004EC13D /* Frameworks */,
 				3B9BC97D280E9C09004EC13D /* Resources */,
+				5E8A77824C1FB6E4818C770E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		044011A505454FC5D2CA0E61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MFLibrary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E8A77824C1FB6E4818C770E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MFLibrary/Pods-MFLibrary-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MFLibrary/Pods-MFLibrary-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MFLibrary/Pods-MFLibrary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B9BC97B280E9C09004EC13D /* Sources */ = {
@@ -277,6 +346,7 @@
 		};
 		3B9BC989280E9C09004EC13D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 072E9773B14D5A835669B810 /* Pods-MFLibrary.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -307,6 +377,7 @@
 		};
 		3B9BC98A280E9C09004EC13D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 582DD91CCD071085654F1AE8 /* Pods-MFLibrary.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

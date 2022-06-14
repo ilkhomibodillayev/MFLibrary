@@ -19,4 +19,6 @@ Pod::Spec.new do |spec|
   spec.source_files = '**/*.swift', '*.swift'
   spec.swift_versions = '4.0'
   spec.ios.deployment_target = '11.0'
+  spec.dependency 'GoogleMLKit/FaceDetection'
+  spec.dependency 'GoogleMLKit/TextRecognition'
 end
