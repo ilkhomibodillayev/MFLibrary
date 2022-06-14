@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = 'MFLibrary'
-  spec.version      = '0.1.4'
+  spec.version      = '0.1.5'
   spec.authors      = { 
     'Ilkhom Ibodillayev' => 'ilkhom89@gmail.com'
   }
