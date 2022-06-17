@@ -22,4 +22,5 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '11.0'
   spec.source_files = "MFModule/Logger.swift"
   spec.dependency 'MBProgressHUD'
+  spec.vendored_libraries = 'Libs/libLogger.a'
 end

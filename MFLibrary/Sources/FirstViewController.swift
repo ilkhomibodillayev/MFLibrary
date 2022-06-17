@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import Logger
 
 class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(Logger().getLog(msg: "TTTT", value: "FirstViewController"))
     }
 }

@@ -12,6 +12,10 @@
 		3B9BC98C280E9DDA004EC13D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BC98B280E9DDA004EC13D /* FirstViewController.swift */; };
 		3B9BC9CC280ED764004EC13D /* MFLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BC9CB280ED764004EC13D /* MFLogger.swift */; };
 		3C1060C3DF9016B7F40E1FE4 /* Pods_MFLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41011835017400138A27EE83 /* Pods_MFLibrary.framework */; };
+		78683919285C10C6005DA905 /* libLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78683913285C10C6005DA905 /* libLogger.a */; };
+		7868391A285C10C6005DA905 /* x86_64-apple-ios-simulator.swiftdoc in Resources */ = {isa = PBXBuildFile; fileRef = 78683915285C10C6005DA905 /* x86_64-apple-ios-simulator.swiftdoc */; };
+		7868391B285C10C6005DA905 /* x86_64-apple-ios-simulator.swiftmodule in Resources */ = {isa = PBXBuildFile; fileRef = 78683916285C10C6005DA905 /* x86_64-apple-ios-simulator.swiftmodule */; };
+		7868391C285C10C6005DA905 /* x86_64-apple-ios-simulator.swiftsourceinfo in Resources */ = {isa = PBXBuildFile; fileRef = 78683918285C10C6005DA905 /* x86_64-apple-ios-simulator.swiftsourceinfo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		3B9BC9CB280ED764004EC13D /* MFLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFLogger.swift; sourceTree = "<group>"; };
 		41011835017400138A27EE83 /* Pods_MFLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MFLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		582DD91CCD071085654F1AE8 /* Pods-MFLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFLibrary.release.xcconfig"; path = "Target Support Files/Pods-MFLibrary/Pods-MFLibrary.release.xcconfig"; sourceTree = "<group>"; };
+		78683913285C10C6005DA905 /* libLogger.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLogger.a; sourceTree = "<group>"; };
+		78683915285C10C6005DA905 /* x86_64-apple-ios-simulator.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "x86_64-apple-ios-simulator.swiftdoc"; sourceTree = "<group>"; };
+		78683916285C10C6005DA905 /* x86_64-apple-ios-simulator.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = "x86_64-apple-ios-simulator.swiftmodule"; sourceTree = "<group>"; };
+		78683918285C10C6005DA905 /* x86_64-apple-ios-simulator.swiftsourceinfo */ = {isa = PBXFileReference; lastKnownFileType = file; path = "x86_64-apple-ios-simulator.swiftsourceinfo"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C1060C3DF9016B7F40E1FE4 /* Pods_MFLibrary.framework in Frameworks */,
+				78683919285C10C6005DA905 /* libLogger.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,7 +52,6 @@
 				072E9773B14D5A835669B810 /* Pods-MFLibrary.debug.xcconfig */,
 				582DD91CCD071085654F1AE8 /* Pods-MFLibrary.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -76,6 +84,7 @@
 		3B9BC981280E9C09004EC13D /* MFLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				78683912285C10B5005DA905 /* Libs */,
 				3B9BC98D280E9F7B004EC13D /* Sources */,
 				3B9BC982280E9C09004EC13D /* MFLibrary.h */,
 				3B9BC983280E9C09004EC13D /* MFLibrary.docc */,
@@ -90,6 +99,33 @@
 				3B9BC9CB280ED764004EC13D /* MFLogger.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		78683912285C10B5005DA905 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				78683913285C10C6005DA905 /* libLogger.a */,
+				78683914285C10C6005DA905 /* Logger.swiftmodule */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		78683914285C10C6005DA905 /* Logger.swiftmodule */ = {
+			isa = PBXGroup;
+			children = (
+				78683915285C10C6005DA905 /* x86_64-apple-ios-simulator.swiftdoc */,
+				78683916285C10C6005DA905 /* x86_64-apple-ios-simulator.swiftmodule */,
+				78683917285C10C6005DA905 /* Project */,
+			);
+			path = Logger.swiftmodule;
+			sourceTree = "<group>";
+		};
+		78683917285C10C6005DA905 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				78683918285C10C6005DA905 /* x86_64-apple-ios-simulator.swiftsourceinfo */,
+			);
+			path = Project;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +198,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7868391B285C10C6005DA905 /* x86_64-apple-ios-simulator.swiftmodule in Resources */,
+				7868391C285C10C6005DA905 /* x86_64-apple-ios-simulator.swiftsourceinfo in Resources */,
+				7868391A285C10C6005DA905 /* x86_64-apple-ios-simulator.swiftdoc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,12 +385,17 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MFLibrary/Libs",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = uz.library.MFLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/MFLibrary/Libs";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -377,12 +421,17 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MFLibrary/Libs",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = uz.library.MFLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/MFLibrary/Libs";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
