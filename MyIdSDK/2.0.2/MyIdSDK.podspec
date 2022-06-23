@@ -17,7 +17,9 @@ Pod::Spec.new do |spec|
   }
   spec.summary      = 'MyIdSDK'
   spec.swift_versions = '4.0'
-  spec.source_files = "MyIdSDK/Constants/Constants.swift"
+  spec.source_files = "MyIdSDK/Helpers"
+  spec.source_files = "MyIdSDK/Extensions"
+  spec.source_files = "MyIdSDK/Constants"
   spec.exclude_files = "Classes/Exclude"
   spec.ios.deployment_target = '10.0'
 end
