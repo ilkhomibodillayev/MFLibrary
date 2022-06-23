@@ -11,15 +11,13 @@ Pod::Spec.new do |spec|
   }
   spec.homepage     = 'https://google.com'
   spec.source       = { 
-    :git => 'https://github.com/ilkhomibodillayev/myidsdk', :tag => "2.0.2", 
+    :git => 'https://github.com/ilkhomibodillayev/myidsdk', 
     :branch => 'master',
     :tag => spec.version.to_s 
   }
   spec.summary      = 'MyIdSDK'
   spec.swift_versions = '4.0'
-  spec.source_files = "MyIdSDK/Helpers"
-  spec.source_files = "MyIdSDK/Extensions"
-  spec.source_files = "MyIdSDK/Constants"
+  spec.source_files = "MyIdSDK/Constants/*.swift"
   spec.exclude_files = "Classes/Exclude"
   spec.ios.deployment_target = '10.0'
 end
